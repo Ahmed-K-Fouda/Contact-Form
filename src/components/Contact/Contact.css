@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+.contact__container {
+    width: 100%;
+    background-image: url('../../../src/images/secondary_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 10;
+}
+
+.overlay {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.contact {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 20;
+}
+
+
+.contact .top__page {
+    display: flex;
+    flex-direction: column;
+    color: #ffffffd9;
+    justify-content: center;
+}
+
+.contact .top__page p:first-of-type {
+    position: relative;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+.contact .top__page p:first-of-type::after {
+    position: absolute;
+    content: '';
+    width: 5rem;
+    height: 100%;
+    left: 0;
+    top: 5px;
+    border-bottom: 2px solid #BF9B30;
+}
+
+.contact__main {
+    color: #ffffffd9;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.contact__main .contact__left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 5rem;
+}
+
+.contact__main .contact__left .visit {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact__main .contact__left .visit sm {
+    font-size: 0.8rem;
+    color: darkgray;
+
+}
+
+.contact__main .contact__left .leave__email {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.contact__main .contact__left .leave__email sm {
+    font-size: 0.8rem;
+    color: darkgray;
+}
+
+
+
+.contact__main .contact__left .follow {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.contact__main .contact__left .follow .social__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8rem;
+}
+
+.contact__main .contact__left .follow .social__icon svg {
+    color: #BF9B30;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.contact__main .contact__right {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px 20px;
+}
+
+.contact__right .right__head {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact__right .right__head p {
+    font-size: 0.8rem;
+    color: darkgrey;
+}
+
+
+.contact__right .input__name {
+    display: flex;
+    gap: 10px;
+    margin-top: 2rem;
+
+}
+
+.contact__right input {
+    outline: none;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+    color: #fff;
+    background-color: rgba(51, 53, 53, 0.7);
+}
+
+.contact__right .input__first__name, .input__last__name {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact__right .email__phone__input {
+    display: flex;
+    gap: 10px;
+    margin-top: 0.5rem;
+
+}
+
+.contact__right .email__phone__input .email, .phone {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact__right label {
+    font-size: 13px;
+}
+
+.contact__right .text__area {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.contact .text__area label {
+    margin-top: 8px;
+}
+
+.contact__right .text__area textarea {
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 13px;
+    background-color: rgba(51, 53, 53, 0.7);
+
+}
+
+.submit__form {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.submit__form button {
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    background: #BF9B30;
+    color: #ffffffd9;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+@media (max-width: 798px) {
+    .contact__main {
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 1rem;
+    }
+
+
+    .input__name, .email__phone__input {
+        flex-direction: column;
+    }
+}
